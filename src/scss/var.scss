@@ -1,0 +1,21 @@
+$font-stack: "Space Mono", monospace;
+$bg-color: white;
+$primary-color: #333;
+$title-color: #BF4080;
+
+$border: 1px #8C8C8C solid;
+$box-shadow: 10px 10px 15px -4px #6b717f;
+$padding: 16px;
+
+$bg-color-code: black;
+
+$bg-color-success: green;
+$bg-color-error: red;
+$bg-color-warning: orange;
+$text-color: white;
+
+@mixin shadow($value) {
+    box-shadow: $value;
+    -webkit-box-shadow: $value;
+    -moz-box-shadow: $value;    
+}
