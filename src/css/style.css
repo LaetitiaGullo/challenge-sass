@@ -7,7 +7,8 @@ header, footer {
   text-align: center; }
 
 main {
-  padding: 0 1em; }
+  padding-top: 0px;
+  padding-bottom: 0px; }
 
 h1, h2 {
   color: #BF4080; }
@@ -23,14 +24,16 @@ article {
 
 article section {
   border: 1px #8C8C8C solid;
-  box-shadow: 10px 10px 15px -4px #6b717f;
   flex-grow: 1;
   flex-basis: 45%;
   padding: 16px;
   margin: 16px;
   clear: both;
   overflow: auto;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  box-shadow: 10px 10px 15px -4px #6b717f;
+  -webkit-box-shadow: 10px 10px 15px -4px #6b717f;
+  -moz-box-shadow: 10px 10px 15px -4px #6b717f; }
 
 article section#selling-points {
   flex-grow: 2;
