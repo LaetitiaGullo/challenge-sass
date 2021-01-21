@@ -7,7 +7,7 @@ https://laetitiagullo.github.io/challenge-sass/
 January 2021
 
 ### Status :
-In progress
+Completed project
 
 ### Type of project :
 Exercise
