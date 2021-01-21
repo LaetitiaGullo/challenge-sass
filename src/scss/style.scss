@@ -10,6 +10,14 @@ header, footer {
     text-align: center;
 }
 
+footer {
+    h3 {
+        font-size: 1.5em;
+        padding: $padding *2;
+        margin-bottom: 0px;
+    }
+}
+
 main {
     padding-top: $padding *0;
     padding-bottom: $padding *0;
@@ -19,80 +27,76 @@ h1, h2 {
     color: $title-color;
 }
 
-h3 {
-    font-size: 1.5em;
-    padding: $padding *2;
-    margin-bottom: 0px;
-}
-
 article {
     display: flex;
     flex-wrap: wrap;
+
+    section {
+        border: $border;
+        flex-grow: 1;
+        flex-basis: 45%;
+        padding: $padding;
+        margin: 16px;
+        clear: both;
+        overflow: auto;
+        box-sizing: border-box;
+        @include shadow($box-shadow);
+
+    }
+    
+    #selling-points {
+        flex-grow: 2;
+        flex-basis: 100%;
+    }
+
+    code {
+        background-color: $bg-color-code;
+        border: $border;
+        color: #8C8C8C;
+        page-break-inside: avoid;
+        font-family: monospace;
+        font-size: 15px;
+        line-height: 1.6;
+        margin-bottom: 1.6em;
+        max-width: 100%;
+        overflow: auto;
+        padding: 1em 1.5em;
+        display: block;
+        word-wrap: break-word;
+    }
+
+    code.before {
+        float: left;
+        width: 40%;
+    }
+
+    code.after {
+        float: right;
+        width: 40%;
+    }
 }
 
-article section {
-    border: $border;
-    flex-grow: 1;
-    flex-basis: 45%;
-    padding: $padding;
-    margin: 16px;
-    clear: both;
-    overflow: auto;
-    box-sizing: border-box;
-    @include shadow($box-shadow);
-}
-
-article section#selling-points {
-    flex-grow: 2;
-    flex-basis: 100%;
-}
-
-article code {
-    background-color: $bg-color-code;
-    border: $border;
-    color: #8C8C8C;
-    page-break-inside: avoid;
-    font-family: monospace;
-    font-size: 15px;
-    line-height: 1.6;
-    margin-bottom: 1.6em;
-    max-width: 100%;
-    overflow: auto;
-    padding: 1em 1.5em;
-    display: block;
-    word-wrap: break-word;
-}
-
-article code.before {
-    float: left;
-    width: 40%;
-}
-
-article code.after {
-    float: right;
-    width: 40%;
-}
 
 .message {
     padding: $padding;
     color: $text-color;
-}
 
-.success {
-    @extend .message;
-    background-color: $bg-color-success;
-}
+    .success {
+        @extend .message;
+        background-color: $bg-color-success;
+    }
 
-.error {
-    @extend .message;
-    background-color: $bg-color-error;
-}
+    .error {
+        @extend .message;
+        background-color: $bg-color-error;
+    
+        :hover {
+            background-color: $bg-color-success
+        }
+    }
 
-.error:hover {
-    background-color: $bg-color-success
-}
-
-.warning {
-    @extend .message;
-    background-color: $bg-color-warning;
+    .warning {
+        @extend .message;
+        background-color: $bg-color-warning;
+    }
 }
