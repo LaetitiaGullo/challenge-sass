@@ -10,17 +10,17 @@ header, footer {
     text-align: center;
 }
 
+main {
+    padding-top: $padding *0;
+    padding-bottom: $padding *0;
+}
+
 footer {
     h3 {
         font-size: 1.5em;
         padding: $padding *2;
         margin-bottom: 0px;
     }
-}
-
-main {
-    padding-top: $padding *0;
-    padding-bottom: $padding *0;
 }
 
 h1, h2 {

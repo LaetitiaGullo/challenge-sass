@@ -10,72 +10,63 @@ main {
   padding-top: 0px;
   padding-bottom: 0px; }
 
-h1, h2 {
-  color: #BF4080; }
-
-h3 {
+footer h3 {
   font-size: 1.5em;
   padding: 32px;
   margin-bottom: 0px; }
 
+h1, h2 {
+  color: #BF4080; }
+
 article {
   display: flex;
   flex-wrap: wrap; }
+  article section {
+    border: 1px #8C8C8C solid;
+    flex-grow: 1;
+    flex-basis: 45%;
+    padding: 16px;
+    margin: 16px;
+    clear: both;
+    overflow: auto;
+    box-sizing: border-box;
+    box-shadow: 10px 10px 15px -4px #6b717f;
+    -webkit-box-shadow: 10px 10px 15px -4px #6b717f;
+    -moz-box-shadow: 10px 10px 15px -4px #6b717f; }
+  article #selling-points {
+    flex-grow: 2;
+    flex-basis: 100%; }
+  article code {
+    background-color: black;
+    border: 1px #8C8C8C solid;
+    color: #8C8C8C;
+    page-break-inside: avoid;
+    font-family: monospace;
+    font-size: 15px;
+    line-height: 1.6;
+    margin-bottom: 1.6em;
+    max-width: 100%;
+    overflow: auto;
+    padding: 1em 1.5em;
+    display: block;
+    word-wrap: break-word; }
+  article code.before {
+    float: left;
+    width: 40%; }
+  article code.after {
+    float: right;
+    width: 40%; }
 
-article section {
-  border: 1px #8C8C8C solid;
-  flex-grow: 1;
-  flex-basis: 45%;
-  padding: 16px;
-  margin: 16px;
-  clear: both;
-  overflow: auto;
-  box-sizing: border-box;
-  box-shadow: 10px 10px 15px -4px #6b717f;
-  -webkit-box-shadow: 10px 10px 15px -4px #6b717f;
-  -moz-box-shadow: 10px 10px 15px -4px #6b717f; }
-
-article section#selling-points {
-  flex-grow: 2;
-  flex-basis: 100%; }
-
-article code {
-  background-color: black;
-  border: 1px #8C8C8C solid;
-  color: #8C8C8C;
-  page-break-inside: avoid;
-  font-family: monospace;
-  font-size: 15px;
-  line-height: 1.6;
-  margin-bottom: 1.6em;
-  max-width: 100%;
-  overflow: auto;
-  padding: 1em 1.5em;
-  display: block;
-  word-wrap: break-word; }
-
-article code.before {
-  float: left;
-  width: 40%; }
-
-article code.after {
-  float: right;
-  width: 40%; }
-
-.message, .success, .error, .warning {
+.message, .message .success, .message .error, .message .warning {
   padding: 16px;
   color: white; }
-
-.success {
-  background-color: green; }
-
-.error {
-  background-color: red; }
-
-.error:hover {
-  background-color: green; }
-
-.warning {
-  background-color: orange; }
+  .message .success {
+    background-color: green; }
+  .message .error {
+    background-color: red; }
+    .message .error :hover {
+      background-color: green; }
+  .message .warning {
+    background-color: orange; }
 
 /*# sourceMappingURL=style.css.map */
